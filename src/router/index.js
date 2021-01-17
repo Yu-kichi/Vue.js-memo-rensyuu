@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import TodoList from '../components/TodoList'
+import TodoForm from '../components/TodoForm'
 
 Vue.use(VueRouter)
 
@@ -8,7 +9,12 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: TodoList
+  },
+  {
+    path: '/todos/add',
+    name: 'Form',
+    component: TodoForm
   },
   {
     path: '/about',
